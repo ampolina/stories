@@ -1,0 +1,108 @@
+<style>
+    .chocolate-workshop {
+        display: flex;
+        max-width: 320px;
+        max-height: 512px;
+        padding: 68px 0 0 0;
+        flex-direction: column;
+        font-size: 14px;
+        color: #fff;
+        line-height: 100%;
+        /* background-image: url('./pic1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%; */
+    }
+
+    .workshop-card {
+        border-radius: 24px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.16);
+        align-self: center;
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        max-width: 237px;
+        max-height: 100%;
+        flex-direction: column;
+        padding: 15px;
+        /* margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 200px; */
+    }
+
+    .workshop-title {
+        font: 700 26px Arial, sans-serif;
+        margin-top: 0;
+    }
+
+    .total-cost {
+        margin-top: 5px;
+        font: 400 16px Arial, sans-serif;
+    }
+
+    .cost-item {
+        display: flex;
+        margin-top: 8px;
+        gap: 14px;
+        justify-content: space-between;
+    }
+
+    .cost-label {
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+    }
+
+    .cost-value {
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+    }
+
+    .business-history {
+        font-family: Arial, sans-serif;
+        font-weight: 700;
+        margin-top: 15px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .background-image {
+        position: absolute;
+        inset: 0;
+        height: 512px;
+        width: 320px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .workshop-image {
+        aspect-ratio: 1.69;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        margin-top: 19px;
+    }
+</style>
+
+<article class="chocolate-workshop">
+    <img loading="lazy" src="./pic1.png" alt="" class="background-image" />
+
+    <div class="workshop-card">
+        <h1 class="workshop-title">Шоколадная мастерская</h1>
+        <p class="total-cost">885 000 ₽</p>
+        <div class="cost-item">
+            <span class="cost-label">Ремонт помещения</span>
+            <span class="cost-value">500 000 ₽</span>
+        </div>
+        <div class="cost-item">
+            <span class="cost-label">Оборудование</span>
+            <span class="cost-value">250 000 ₽</span>
+        </div>
+        <div class="cost-item">
+            <span class="cost-label">Зарплата кондитера</span>
+            <span class="cost-value">135 000 ₽</span>
+        </div>
+        <a href="https://www.tinkoff.ru/kassa/" class="business-history">История бизнеса</a>
+    </div>
+</article>

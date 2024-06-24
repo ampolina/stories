@@ -1,0 +1,113 @@
+<style>
+  .product-card {
+    max-width: 320px;
+    max-height: 512px;
+    font: 400 13px Arial, sans-serif;
+    color: #000;
+  }
+
+  .product-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: static;
+    aspect-ratio: auto;
+    width: 268px;
+    height: 449px;
+    padding: 0 0 26px 26px;
+  }
+
+  .background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 512px;
+    max-width: 320px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .product-content {
+    position: relative;
+    border-radius: 16px 16px 0 0;
+    background-color: #f0f0f0;
+    display: flex;
+    margin-bottom: 18px;
+    padding-top: 21px;
+    flex-direction: column;
+  }
+
+  .product-image {
+    aspect-ratio: 1.49;
+    object-fit: auto;
+    object-position: center;
+    width: 187px;
+    align-self: center;
+    max-width: 100%;
+  }
+
+  .product-details {
+    border-radius: 0 0 16px 16px;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    margin: 18px 0 -103px;
+    padding: 20px;
+  }
+
+  .product-title {
+    text-align: center;
+    font: 700 20px Arial, sans-serif;
+    align-self: start;
+  }
+
+  .product-price {
+    color: #9299a2;
+    font: 400 13px Arial, sans-serif;
+    line-height: 115%;
+    margin-top: 4px;
+  }
+
+  .product-specs,
+  .product-description {
+    font: 400 13px Arial, sans-serif;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+
+  .product-specs {
+    margin-top: 10px;
+  }
+
+  .buy-button {
+    border-radius: 22.5px;
+    background-color: #ffdd2d;
+    text-align: center;
+    margin: 0 134px 50px 0;
+    padding: 10px 24px;
+    font: 15px/133% Arial, sans-serif;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+  }
+</style>
+
+<article class="product-card">
+  <div class="product-wrapper">
+    <img loading="lazy" src="./pic1.png" alt="" class="background-image" />
+    <div class="product-content">
+      <img loading="lazy" src="./pic2.png" alt="Huawei MateBook D15 laptop" class="product-image" />
+      <div class="product-details">
+        <h2 class="product-title">Huawei MateBook D15</h2>
+        <p class="product-price">49 999 ₽</p>
+        <p class="product-specs">Процессор: Intel Core i5. Диагональ: 15,6". Оперативная память: 8 ГБ. Накопитель: 512 ГБ.</p>
+        <p class="product-description">Заряд держит до 7 часов. Легкий, можно брать с собой. Не нагревается, даже если работать с большими таблицами в Экселе или с изображениями в Фотошопе.</p>
+        <a href="https://www.tinkoff.ru/kassa/" class="buy-button">Купить</a>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,89 @@
+<style>
+    .forbes-club-card {
+        max-width: 320px;
+        max-height: 512px;
+        flex-direction: column;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        justify-content: center;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        aspect-ratio: 0.63;
+        width: 100%;
+        padding: 76px 20px 47px;
+    }
+
+    .background-image {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        max-height: 512px;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .club-logo {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 54px;
+        z-index: 100;
+    }
+
+    .club-title {
+        position: relative;
+        margin-top: 15px;
+        font: 700 26px Arial, sans-serif;
+    }
+
+    .club-price {
+        position: relative;
+        color: rgba(255, 255, 255, 0.7);
+        font-family: Arial, sans-serif;
+        line-height: 122%;
+        margin-top: 5px;
+    }
+
+    .club-description {
+        position: relative;
+        font-family: Arial, sans-serif;
+        line-height: 20px;
+        margin: 10px 36px 0 0;
+    }
+
+    .cta-button {
+        position: relative;
+        border-radius: 22.5px;
+        background-color: #ffdd2d;
+        color: #000;
+        text-align: center;
+        justify-content: center;
+        margin: 15px 180px 0 0;
+        padding: 10px 24px;
+        font: 15px/133% Arial, sans-serif;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+    }
+</style>
+
+<article class="forbes-club-card">
+    <div class="card-content">
+        <img loading="lazy" src="./pic1.png" class="background-image" alt="" />
+        <img loading="lazy" src="./pic2.png" class="club-logo" alt="Forbes Club logo" />
+        <h2 class="club-title">Forbes Club</h2>
+        <p class="club-price">От 1 до 3 млн рублей в год</p>
+        <p class="club-description">
+            Стать участниками Forbes Club могут собственники среднего и крупного бизнеса с годовым доходом не менее 500 млн рублей. Клуб проводит закрытые встречи с чиновниками, участниками рейтингов Forbes, бизнес-завтраки и мероприятия без галстука со звездами. В среднем в год проходит более 50 встреч.
+        </p>
+         <a href="https://www.tinkoff.ru/kassa/" class="cta-button" tabindex="0">В клуб</a>
+    </div>
+</article>
